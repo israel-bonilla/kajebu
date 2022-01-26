@@ -1,0 +1,30 @@
+.container {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.logo {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.profile {
+  padding: 15px 5px 10px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  color: rgb(52, 123, 255);
+  cursor: pointer;
+}
+
+.username {
+  font-size: 17px;
+  margin-left: 8px;
+  cursor: pointer;
+}

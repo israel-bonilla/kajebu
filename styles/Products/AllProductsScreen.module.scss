@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.products {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 275px);
+  }
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 275px);
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 275px);
+  }
+}

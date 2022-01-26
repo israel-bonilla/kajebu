@@ -1,0 +1,25 @@
+.listItem {
+  background-color: white;
+  margin: 5px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.options {
+  color: gray;
+  span {
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+  margin-bottom: 20px;
+  cursor: pointer;
+}
