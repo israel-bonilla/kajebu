@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.scss'
 
@@ -15,7 +14,9 @@ export default function Home() {
       </Head>
 
       <h1>Ready!</h1>
-      <button onClick={() => router.push('/dashboard')}>Go to Dashboard</button>
+      <button onClick={() => {
+        router.push('/dashboard');
+      }}>Go to Dashboard</button>
     </div>
   )
 }

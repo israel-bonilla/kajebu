@@ -22,7 +22,7 @@ const WelcomeScreen = () => {
       <div className={styles.guide}>
         <img src="" alt="" />
         <div className={styles.guideInfo}>
-            <FontAwesomeIcon icon={faLightbulb} color="orange" size="md" />
+            <FontAwesomeIcon icon={faLightbulb} color="orange" />
             <span style={{marginLeft: 5}}>Guides</span>
             <p className={styles.guideTitle}>Getting Started with Your Products</p>
             <p className={styles.guideDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque dolor minus amet, perspiciatis dolores.</p>
