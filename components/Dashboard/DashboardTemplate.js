@@ -1,6 +1,7 @@
 import Sidebar from "../Sidebar/Sidebar"
 import Header from "./Header"
 import styles from '../../styles/Dashboard/DashboardTemplate.module.scss'
+import Head from "next/head"
 
 const DashboardTemplate = ({ Screen }) => {
   return (
