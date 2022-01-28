@@ -4,13 +4,21 @@ import styles from '../../styles/Dashboard/DashboardTemplate.module.scss'
 
 const DashboardTemplate = ({ Screen }) => {
   return (
-    <div className={styles.container}>
-      <Sidebar className={styles.sidebar} />
-      <section className={styles.right}>
-        <Header />
-        <Screen />
-      </section>
-    </div>
+    <>
+      <Head>
+        <title>Kajebu Business Platform</title>
+        <meta name="description" content="Online Knowledge Business Suite" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <div className={styles.container}>
+        <Sidebar className={styles.sidebar} />
+        <section className={styles.right}>
+          <Header />
+          <Screen />
+        </section>
+      </div>
+    </>
   )
 }
 

@@ -6,12 +6,14 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCog, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { faQuestionCircle } from "@fortawesome/free-regular-svg-icons";
-import { useSetRecoilState } from "recoil";
+import { useRecoilValue, useSetRecoilState } from "recoil";
 import { activeModuleState } from "../../atoms/sidebarAtom";
+import { userState } from "../../atoms/userAtom";
 
 const Sidebar = () => {
   const router = useRouter();
   const setActive = useSetRecoilState(activeModuleState);
+  const username = useRecoilValue(userState);
 
   return (
     <aside className={styles.container}>
@@ -44,7 +46,7 @@ const Sidebar = () => {
         {/* Sidebar Bottom */}
         <div className={styles.profile} onClick={() => router.push('/profile')}>
           <FontAwesomeIcon icon={faUserCircle} size="2x" className={styles.avatar} />
-          <span className={styles.username}>User Name</span>
+          <span className={styles.username}>{username}</span>
         </div>
       </div>
     </aside>
