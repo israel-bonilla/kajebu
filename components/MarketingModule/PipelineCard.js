@@ -12,7 +12,8 @@ const PipelineCard = ({ name, visitors, image, pages }) => {
         {visitors} Visitors
       </span>
       <div className={styles.image}>
-        <Image src={image} alt={name + " image"} width={300} height={225} />
+        {/* <Image src={image} alt={name + " image"} width={300} height={225} /> */}
+        <img src={image} alt={name + " image"} width="300" height="225" />
       </div>
       <p>{pages} Pages</p>
     </div>

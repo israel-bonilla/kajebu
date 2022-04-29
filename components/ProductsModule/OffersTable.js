@@ -15,7 +15,8 @@ const OffersTable = ({ data }) => {
     {data && data.map(({ image, title, products, price, netRevenue, subscription }) => (
       <tr key={title}>
         <td>
-          <Image src={image} width={66} height={44} />
+          {/* <Image src={image} width={66} height={44} /> */}
+          <img src={image} alt="" width="66" height="44" />
           <span>{title}</span>
         </td>
         <td>{products}</td>
