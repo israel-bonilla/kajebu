@@ -34,7 +34,7 @@ const WelcomeScreen = () => {
         <div className={styles.left}>
           <h3>New Kajebu updates</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum minus, incidunt excepturi fuga exercitationem repellat? Nihil iste sed repellat voluptates est consequatur commodi illo consequuntur obcaecati quam explicabo, voluptas ducimus! Deserunt possimus laboriosam eligendi ut at nemo quis quisquam.</p>
-          <button>See what's new</button>
+          <button>See what&apos;s new</button>
         </div>
         <div className={styles.right}>
           <img src="https://links.israelb.xyz/kajebu/home-updates.png" alt="" />
