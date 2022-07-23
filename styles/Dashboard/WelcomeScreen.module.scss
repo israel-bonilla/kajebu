@@ -4,20 +4,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 .cards {
   display: grid;
-  width: 60%;
+  width: 100%;
+  max-width: 800px;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 40px 0;
 }
 
 .guide {
   background-color: white;
-  width: 60%;
+  width: 100%;
+  max-width: 800px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   padding: 10px;
+  margin-bottom: 20px;
 
   a {
     font-size: 14px;
@@ -38,4 +44,44 @@
 
 .guideDescription {
   font-size: 15px;
+}
+
+.updates {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px 15px;
+
+  .left {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5px;
+    padding: 10px;
+
+    h3, p {
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #0273EF;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      width: 140px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .right {
+    flex: 0.5;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+  }
 }

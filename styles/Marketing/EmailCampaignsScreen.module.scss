@@ -1,1 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
 
+.header {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 30px;
+
+  h1 {
+    margin-right: 15px;
+    font-weight: 500;
+  }
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  flex: 0.5;
+  display: flex;
+
+  li {
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:first-child {
+      text-decoration: underline solid blue 3px;
+      text-underline-offset: 8px;
+    }
+  }
+}
+
+.search {
+  flex: 0.5;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+
+  input {
+    flex: 1;
+    border: none;
+    margin-left: 5px;
+  }
+}
+
+.campaignRows {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.campaignRow {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 20px;
+}
+
+.campaignRowIcon {
+  margin-right: 20px;
+}
+
+.campaignRowMiddle {
+  flex: 1;
+}
+
+.campaignStats {
+  display: flex;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+
+    :first-child {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    :last-child {
+      color: gray;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  padding: 20px 25px;
+  border-radius: 500px;
+
+  p {
+    margin-left: 5px;
+  }
+}
